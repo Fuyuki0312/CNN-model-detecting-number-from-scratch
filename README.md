@@ -5,13 +5,16 @@ Image classification using Convolutional Neural Network, demonstrating inference
 ## Project Overview
 - Task: Numerical Image Classification (from 0 to 9)
 - Model: Convolutional Neural Network (CNN)
-- Framework: PyTorch
+- Test Accuracy: 99.9%
 
 
 ## Dataset
-- The dataset is not included due to size limitations.
+- The dataset is from Kaggle and is not included due to size limitations.
 
-- Structure expected:
+- Number of images: approximately 25000
+- Image size: 90x140
+
+- Structure:
 - numbers/
 - ├─ 0/
 - ├─ 1/
