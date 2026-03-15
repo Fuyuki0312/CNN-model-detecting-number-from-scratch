@@ -5,7 +5,7 @@ Numerical image classification using Convolutional Neural Network, illustrating 
 ## Overview
 - Task: Numerical Image Classification (from 0 to 9)
 - Model: Convolutional Neural Network (CNN)
-- Challenges: Building a CNN model from scratch and implementing an interactive demonstration
+- Challenges: Building a CNN model from scratch, training the model and implementing an interactive demonstration
 
 
 ## Demonstration
