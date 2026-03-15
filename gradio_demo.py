@@ -1,3 +1,5 @@
+# An interactive demonstration of the model is produced at: https://huggingface.co/spaces/Fuyuki0312/ModelDetectingNumber-demo
+
 from model import Model_detecting_number
 import torch
 from torchvision import transforms
