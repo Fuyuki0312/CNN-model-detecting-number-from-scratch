@@ -1,5 +1,5 @@
 # Single Handwritten Numerical Digit Classification
-Image classification using Convolutional Neural Network, demonstrating inference pipeline with PyTorch.
+Numerical image classification using Convolutional Neural Network, illustrating the complete machine learning pipeline with PyTorch.
 
 
 ## Overview
