@@ -3,7 +3,7 @@ Numerical image classification using Convolutional Neural Network, illustrating 
 
 
 ## Overview
-- Task: Numerical Image Classification (from 0 to 9)
+- Task: Handwritten Numerical Image Classification (from 0 to 9)
 - Model: Convolutional Neural Network (CNN)
 - Challenges: Building a CNN model from scratch, training the model and implementing an interactive demonstration
 
@@ -14,22 +14,24 @@ Numerical image classification using Convolutional Neural Network, illustrating 
 - Note: Input images are grayscale and their background color should be white by default.
 ![description](Images/ModelDemonstration.jpg)
 
+
 ## Metrics
 - Model reached approximately 93% accuracy on a custom dataset.
-
-![description](Images/LossCurve.jpg) ![description](Images/AccuracyCurve.jpg)
+![description](Images/AccuracyCurve.jpg) ![description](Images/LossCurve.jpg)
 ![description](Images/ConfusionMatrix.jpg)
+- The model sometimes confuses digits like 0, 3, 6, 8, and 9 because they share similar rounded shapes.
+
 
 ## How to use this model
-- If you wish to continue to train the existing model, consider to run the `train.py` with both `ModelDetectingNumber.pth` and `model.py` in the same directory. Hyperparameters in `train.py` can be changed to suit your need. Besides, if you wish to train a completely new model, simply delete or move file `ModelDetectingNumber.pth` away. When `ModelDetectingNumber.pth` is not found, `train.py` will automatically initialize a new model with architecture based on `model.py`.
+- If you wish to continue to train the existing model, consider to run the `train.py` with both `ModelDetectingNumber.pth` and `model.py` in the same directory. Hyperparameters in files can be changed to suit your need. Besides, if you wish to train a completely new model, simply delete or move file `ModelDetectingNumber.pth` away. When `ModelDetectingNumber.pth` is not found, `train.py` will automatically initialize a new model with architecture based on `model.py`.
 - The dataset, used for training, should be put in the same directory with `train.py` under a folder named `numbers`, with the following structure:  
 `numbers`/  
 ├── 0/  
-│   ├── img1.png  
-│   ├── img2.png  
+│   ├── `img1.png`  
+│   ├── `img2.png`  
 │   └── ...  
 ├── 1/  
-│   ├── img1.png  
+│   ├── `img1.png`  
 │   └── ...  
 ├── 2/  
 ├── 3/  
@@ -39,7 +41,8 @@ Numerical image classification using Convolutional Neural Network, illustrating 
 ├── 7/  
 ├── 8/  
 └── 9/  
-- Besides, if you only wish to use the model for inference, you can import model from `model.py` with weights loaded from `ModelDetectingNumber.pth`.
+- If you only want to use the model for inference, you can import model from `model.py` with weights loaded from `ModelDetectingNumber.pth`.
+- Beisdes, `PlotConfusionMatrix.py` can be used to plot confusion matrix for current model with weights loaded from `ModelDetectingNumber.pth`.
 
 ## Limitation
 - Model usually gives right predictions only when the background color of input images is white because this model was trained primarily on numerical images with white backgrounds.
