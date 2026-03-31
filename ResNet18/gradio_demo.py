@@ -11,7 +11,6 @@ MODEL_ADDRESS = "ModelDetectingNumber.pth"
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 transform = transforms.Compose([
-    transforms.Grayscale(),
     transforms.Resize((90, 140)),
     transforms.CenterCrop((90, 140)),
     transforms.ToTensor(),
