@@ -1,4 +1,4 @@
-# Single Handwritten Numerical Digit Classification  
+# Model Comparison In Handwritten Digit Classification  
 A comparative study of CNN and ResNet18 for handwritten digit classification with detailed evaluation and analysis.
 
 
