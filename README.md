@@ -26,7 +26,7 @@ Given the limited size of the dataset in this project, CNN is considered a more 
 
 ## Metrics
 
-### CNN model built from scratch
+### Non-attention CNN model built from scratch
 - The model reached approximately 94% test accuracy.  
 
 ![description](Images/CNNAccuracyCurve.jpg) ![description](Images/CNNLossCurve.jpg)
@@ -35,7 +35,7 @@ Given the limited size of the dataset in this project, CNN is considered a more 
 - The model sometimes confuses digits like 0, 3, 6, 8, and 9 due to similar rounded shapes and different handwritting styles.  
 
 
-### ResNet18
+### Pretrained ResNet18
 - The model reached approximately 99% test accuracy.  
 ![description](Images/ResNetAccuracyCurve.jpg) ![description](Images/ResNetLossCurve.jpg)
 ![description](Images/ResNetConfusionMatrix.jpg)
