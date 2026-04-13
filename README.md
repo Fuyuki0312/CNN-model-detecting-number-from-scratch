@@ -5,7 +5,7 @@ A comparative study of attention-augmented CNN (CNNtention) and ResNet18 for han
 ## 1. Overview
 - Task: Comparing a CNNtention model with ResNet18 models and with other models in handwritten digit classification (from 0 to 9)
 - Model: Convolutional Neural Network (CNN)
-- Mechanism: Transformer Self-attention  
+- Mechanism: Spatial Self-Attention (inspired by Transformer)
 
 
 ## 2. Background
@@ -69,7 +69,7 @@ Some heavy transformations (e.g., random rotation, large scaling) were avoided t
 ![description](Images/CNNtentionAccuracyCurve.jpg) ![description](Images/CNNtentionLossCurve.jpg)
 ![description](Images/CNNtentionConfusionMatrix.jpg)  
 
-- The CNNtention model effectively classifies nearly all labels compared to the Non-attention CNN model above, though the CNNtention model still sometimes misclassifies 9 to 8. This may due to the fact that the number of image 9 is smaller than the number of other images in the custom dataset (section 3).
+- The CNNtention model effectively classifies nearly all labels compared to the Non-attention CNN model above, though the CNNtention model still sometimes misclassifies 9 to 8. This may be due to the fact that the number of image 9 is smaller than the number of other images in the custom dataset (section 3).
 
 ### 5.3. ResNet18 from scratch
 - The model reached 98.99% test accuracy.
@@ -119,7 +119,7 @@ Note: before following the instruction below, you may want to go to folder `CNN 
 ├── 8/  
 └── 9/  
 - If you want to use the models only for inference, you can import the models from `model.py` (and also `self_attention.py` for CNNtention) with weights loaded from `ModelDetectingNumber.pth`.
-- Beisdes, `PlotConfusionMatrix.py` can be used to plot confusion matrix for the current model with weights loaded from `ModelDetectingNumber.pth`.  
+- Beisides, `PlotConfusionMatrix.py` can be used to plot confusion matrix for the current model with weights loaded from `ModelDetectingNumber.pth`.  
 
 
 ## 7. Limitation and Possible Improvements
