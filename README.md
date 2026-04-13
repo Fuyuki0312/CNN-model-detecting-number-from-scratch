@@ -26,7 +26,7 @@ Given the limited size of the dataset in this project, CNN is considered a more 
 
 This project uses a custom dataset of handwritten digits (0–9).  
 The original dataset: https://www.kaggle.com/datasets/olafkrastovski/handwritten-digits-0-9  
-Total images: approximately 20000 images with about 1886 images of label 9 and about 2100 for other labels  
+Total images: approximately 20000 images with 1886 images of label 9 and about 2100 images of other labels  
 
 ### 3.1. Data Cleaning  
 
